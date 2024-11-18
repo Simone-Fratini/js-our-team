@@ -64,13 +64,13 @@ function startupPage() {
     cardContainer.innerHTML += cardTemplate;
   });
 
-  // Ascoltatore per il click sui pulsanti di rimozione
+
   document.addEventListener("click", event => {
 
 
     // Verifica se l'elemento cliccato ha la classe "trash-button"
     if (event.target.classList.contains("trash-button") || event.target.closest(".trash-button")) {
-      // Trova l'elemento più vicino con la classe colonna (rimuovendo l'intera card)
+      // Trova l'elemento più vicino con la classe colonna
       const cardColumn = event.target.closest(".col-12");
       cardColumn.remove();
     }
