@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,8 +18,8 @@
 <body class="bg-dark">
 
 
-    <div class="container text-center mt-4">
-        <h1 class="mb-4">TEAM</h1>
+    <div class="container text-light text-center mt-4">
+        <h1 class="mb-5">TEAM</h1>
     </div>
 
 
@@ -36,24 +37,29 @@
 
 
             <div class="col-12 col-lg-4">
-                <form>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label text-light">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                <form id="add-form">
+                    <div class="mb-4">
+
+                        <label for="name-surname" class="form-label text-light">Nome e Cognome</label>
+                        <input type="text" class="form-control" id="name-surname" required>
+
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label  text-light">Password</label>
-                        <select name="options" id="dropdown">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
+                    <div>
+                        <label for="dropdown" class="form-label  text-light">Lavoro</label>
+                        <select class="form-select mb-4" name="options" id="dropdown">
+                            <option value="Designer">Designer</option>
+                            <option value="Front-end Developer">Front-end Developer</option>
+                            <option value="Back-end Develope">Back-end Developer</option>
+                            <option value="SEO Specialist">SEO Specialist</option>
                         </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label text-light">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <div>
+                            <label for="inputEmail" class="form-label text-light">Email address</label>
+                            <input type="email" class="form-control mb-4" id="inputEmail" required>
+                        </div>
+                        <div>
+                            <label for="file-form" class="form-label text-light">Seleziona foto</label>
+                            <input type="file" class="form-control mb-4" id="file-form" required>
+                        </div>
                     </div>
 
                     <button type="submit" class="btn btn-primary">Submit</button>
